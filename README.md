@@ -15,6 +15,8 @@ All architectural blueprints, mathematical formulations, and engineering specifi
 
 | Document | Description |
 |---|---|
+| 🎥 [**Demo Video (Full Walkthrough MP4)**](./docs/aeropulse_demo.mp4) | High-definition 1080p recorded video walkthrough showing all features and live workflows. |
+| 🎤 [**Pitch Deck & Video Demo Script**](./docs/PITCH_AND_DEMO_SCRIPT.md) | 3-minute video presentation script and 7-slide hackathon pitch deck outline. |
 | 📋 [**Project Charter & Strategic Plan**](./docs/PROJECT_CHARTER_AND_PLAN.md) | Executive summary, problem framing, hackathon alignment, timeline, milestones, and risk matrix. |
 | 🏗️ [**System Architecture & Data Flow**](./docs/SYSTEM_ARCHITECTURE.md) | Multi-layered topology, component roles, and detailed sequence workflows (AeroTrace, CAP alerts, Federated Learning). |
 | 📐 [**Mathematical & AI Models**](./docs/MATHEMATICAL_AND_AI_MODELS.md) | Lagrangian back-trajectory formulas, Gaussian plume expansion $\sigma_y(x)$, 2D advection-diffusion equations, border flux integrals $\Phi(t)$, and Gemini 2.0 prompts. |
