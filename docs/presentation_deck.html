@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: 1920px 1080px;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #080c17;
+    color: #f8fafc;
+    -webkit-print-color-adjust: exact;
+  }
+  .slide {
+    width: 1920px;
+    height: 1080px;
+    box-sizing: border-box;
+    padding: 80px 100px;
+    position: relative;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: radial-gradient(circle at top right, rgba(6, 182, 212, 0.12), transparent 40%),
+                radial-gradient(circle at bottom left, rgba(139, 92, 246, 0.08), transparent 40%),
+                #080c17;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 20px;
+  }
+  .brand {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: monospace;
+  }
+  .brand span { color: #06b6d4; }
+  .badge {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .google-badge {
+    background: rgba(234, 67, 53, 0.15);
+    color: #ff6b6b;
+    border: 1px solid rgba(234, 67, 53, 0.3);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .title-content {
+    margin: auto 0;
+  }
+  h1 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin: 0 0 20px 0;
+    background: linear-gradient(135deg, #ffffff 40%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 16px 0;
+    color: #f8fafc;
+  }
+  .subtitle {
+    font-size: 26px;
+    color: #94a3b8;
+    line-height: 1.5;
+    max-width: 1400px;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .card {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 32px;
+  }
+  .card-highlight {
+    border: 1px solid rgba(6, 182, 212, 0.4);
+    background: rgba(6, 182, 212, 0.05);
+  }
+  .card-danger {
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    background: rgba(239, 68, 68, 0.05);
+  }
+  .card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #38bdf8;
+    font-family: monospace;
+  }
+  .card-text {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.6;
+  }
+  .stat-num {
+    font-size: 54px;
+    font-weight: 900;
+    font-family: monospace;
+    color: #06b6d4;
+    margin-bottom: 4px;
+  }
+  .stat-label {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 1px;
+    font-family: monospace;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 20px;
+    font-size: 15px;
+    color: #64748b;
+    font-family: monospace;
+  }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide">
+  <div class="header">
+    <div class="brand">AERO<span>PULSE</span> BRICS</div>
+    <div style="display:flex; gap:12px;">
+      <span class="badge">BRICS Theme: Sustainability</span>
+      <span class="google-badge">Powered by Google AI (Gemini 2.0 Flash)</span>
+    </div>
+  </div>
+  <div class="title-content">
+    <h1>AeroPulse BRICS</h1>
+    <h2>Cross-Border AI Climate Intelligence & Industrial Source Attribution Network</h2>
+    <p class="subtitle">
+      A federated planetary climate action platform fusing citizen smartphone photos and local IoT sensors with satellite Earth observation and meteorological wind vectors to detect hidden polluters, forecast 48-hour trans-boundary smog dispersion, and coordinate bilateral emergency response.
+    </p>
+  </div>
+  <div class="footer">
+    <span>Build with AI: Code for Communities (Second Edition)</span>
+    <span>https://github.com/githubvin/aeropulse</span>
+  </div>
+</div>
+
+<!-- Slide 2: The Problem -->
+<div class="slide">
+  <div class="header">
+    <div class="brand">AERO<span>PULSE</span> BRICS</div>
+    <span class="badge">The Problem</span>
+  </div>
+  <div>
+    <h2>The Blind Spot: Atmospheric Physics vs. Sovereign Borders</h2>
+    <p class="subtitle">Air pollution doesn't respect political boundaries. Over 300 million citizens across BRICS economic corridors face severe seasonal health emergencies due to three critical systemic failures:</p>
+    <div class="grid-3">
+      <div class="card card-danger">
+        <div class="card-title">1. SATELLITE TEMPORAL LAG</div>
+        <div class="card-text">Earth observation satellites (Sentinel-5P, MODIS) only pass 1–2 times daily and are completely blind under heavy cloud cover, rain, or thick winter inversion fog.</div>
+      </div>
+      <div class="card card-danger">
+        <div class="card-title">2. HYPER-LOCAL INVISIBILITY</div>
+        <div class="card-text">Government monitoring stations are sparse and clustered in city centers, completely missing midnight industrial soot dumps, rural brick kilns, and border stubble fires.</div>
+      </div>
+      <div class="card card-danger">
+        <div class="card-title">3. THE BLAME GAME & SECRECY</div>
+        <div class="card-text">Neighboring states and nations trade accusations because neither has verifiable proof of where plumes originated, and domestic laws prohibit exporting raw telemetry.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Problem Framing</span>
+    <span>Indo-Gangetic • Highveld Basin • Pan-Amazonian • Bohai Rim</span>
+  </div>
+</div>
+
+<!-- Slide 3: The Solution & AeroTrace -->
+<div class="slide">
+  <div class="header">
+    <div class="brand">AERO<span>PULSE</span> BRICS</div>
+    <span class="badge">Innovation: AeroTrace</span>
+  </div>
+  <div>
+    <h2>AeroTrace: Reverse Plume Triangulation & Source Attribution</h2>
+    <p class="subtitle">Pairing Google Gemini 2.0 Flash Multimodal Vision with Lagrangian atmospheric back-trajectory physics:</p>
+    <div class="grid-3">
+      <div class="card card-highlight">
+        <div class="card-title">1. GEMINI MULTIMODAL VISION</div>
+        <div class="card-text">Analyzes citizen sky photos to classify particulate type (Industrial Coal Soot vs. Biomass vs. Chemical mist) and calculates optical opacity percentage and plume rise.</div>
+      </div>
+      <div class="card card-highlight">
+        <div class="card-title">2. LAGRANGIAN BACK-TRAJECTORY</div>
+        <div class="card-text">Numerically inverts wind vectors backward in time against live meteorology, computing exact <b>plausible distance travelled (18.4 km)</b> and <b>transit time (1.25 hours)</b>.</div>
+      </div>
+      <div class="card card-highlight">
+        <div class="card-title">3. UPWIND SECTOR FILTER</div>
+        <div class="card-text">Constructs an upstream dispersion cone (&plusmn;18&deg;) querying registered industrial directories to rank candidate culprit factories with transparent, explainable AI reasoning.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>AeroTrace Technology</span>
+    <span>Google Gen AI SDK • Lagrangian Physics • Spatial Indexing</span>
+  </div>
+</div>
+
+<!-- Slide 4: Platform Architecture -->
+<div class="slide">
+  <div class="header">
+    <div class="brand">AERO<span>PULSE</span> BRICS</div>
+    <span class="badge">End-to-End Architecture</span>
+  </div>
+  <div>
+    <h2>Five Core Pillars of the AeroPulse Platform</h2>
+    <div class="grid-4" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
+      <div class="card">
+        <div class="stat-num">48h</div>
+        <div class="stat-label">Forward Plume Forecast</div>
+        <div class="card-text" style="margin-top:12px; font-size:14px;">2D Advection-Diffusion solver giving downwind schools & hospitals a 24-hour advance buffer.</div>
+      </div>
+      <div class="card">
+        <div class="stat-num">1,420</div>
+        <div class="stat-label">Border Flux kg/h</div>
+        <div class="card-text" style="margin-top:12px; font-size:14px;">Virtual border line-integrals quantifying net cross-border pollutant transfer rates in real-time.</div>
+      </div>
+      <div class="card">
+        <div class="stat-num">5 / 5</div>
+        <div class="stat-label">BRICS Federated Nodes</div>
+        <div class="card-text" style="margin-top:12px; font-size:14px;">India, South Africa, Brazil, China, Russia training via FedAvg with zero raw data export.</div>
+      </div>
+      <div class="card">
+        <div class="stat-num">CAP</div>
+        <div class="stat-label">OASIS v1.2 Protocol</div>
+        <div class="card-text" style="margin-top:12px; font-size:14px;">Automated bilateral alerts to upwind regulators and downwind public health centers.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>System Architecture</span>
+    <span>Python FastAPI • React Vite • Deck.gl / Leaflet • FedAvg</span>
+  </div>
+</div>
+
+<!-- Slide 5: Google AI Integration -->
+<div class="slide">
+  <div class="header">
+    <div class="brand">AERO<span>PULSE</span> BRICS</div>
+    <span class="google-badge">Mandatory Google AI Integration</span>
+  </div>
+  <div>
+    <h2>How Google Gemini 2.0 Flash Powers AeroPulse</h2>
+    <p class="subtitle">Deep, end-to-end integration across the multimodal data lifecycle:</p>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">MULTIMODAL SMOKE INSPECTION</div>
+        <div class="card-text">Uses <code>gemini-2.0-flash</code> via the official <code>google-genai</code> SDK to inspect ambient sky photos, estimating optical extinction and distinguishing coal soot from steam.</div>
+      </div>
+      <div class="card">
+        <div class="card-title">EXPLAINABLE SOURCE REASONING</div>
+        <div class="card-text">Synthesizes back-trajectory distance, wind alignment, and facility fuel profiles to output structured, evidence-backed attribution ranking reports for regulatory authorities.</div>
+      </div>
+      <div class="card">
+        <div class="card-title">MULTILINGUAL EMERGENCY ALERTS</div>
+        <div class="card-text">Dynamically translates critical OASIS CAP advisories into BRICS native languages (Hindi, Portuguese, Chinese, Russian) for instantaneous community dissemination.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Google AI Integration</span>
+    <span>Google Gen AI SDK • Gemini 2.0 Flash • Multi-Language</span>
+  </div>
+</div>
+
+<!-- Slide 6: Summary & Links -->
+<div class="slide">
+  <div class="header">
+    <div class="brand">AERO<span>PULSE</span> BRICS</div>
+    <span class="badge">Submission Summary</span>
+  </div>
+  <div>
+    <h2>Ready for Planetary Climate Action</h2>
+    <div class="grid-2">
+      <div class="card card-highlight">
+        <div class="card-title">PROJECT DELIVERABLES</div>
+        <div class="card-text">
+          &bull; <b>Full-Stack Working Prototype:</b> FastAPI + React WebGL<br>
+          &bull; <b>Automated Test Suite:</b> 12/12 pytest unit tests passing<br>
+          &bull; <b>Full HD Video Walkthrough:</b> 1080p MP4 in repository<br>
+          &bull; <b>Complete Documentation:</b> Architecture, Math, APIs in <code>docs/</code><br>
+          &bull; <b>Open Source Code:</b> MIT Licensed on GitHub
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">SUBMISSION REPOSITORY & DEMO</div>
+        <div class="card-text">
+          &bull; <b>GitHub Repository:</b> https://github.com/githubvin/aeropulse<br>
+          &bull; <b>Demo Video:</b> docs/aeropulse_demo.mp4<br>
+          &bull; <b>Hackathon Track:</b> BRICS Theme (Sustainability & Cooperation)<br>
+          &bull; <b>Google AI:</b> Gemini 2.0 Flash (google-genai SDK)
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>AeroPulse BRICS 2026</span>
+    <span>Build with AI: Code for Communities (Second Edition)</span>
+  </div>
+</div>
+
+</body>
+</html>
